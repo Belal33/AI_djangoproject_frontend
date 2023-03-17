@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ChatAI</title>
+  </head>
+  <body>
+    <div class="page">
+      <!-- body content -->
+
+      <section class="sinup-page">
+        <div class="container">
+          <form method="POST">
+            <input
+              type="hidden"
+              name="csrfmiddlewaretoken"
+              value="yTC8nbyLJr8dfl8oO9WZV9wauwf3NwFw5XxyNAkYeVGix14zIWnmyVRI4COdEtQ8"
+            />
+
+            <label for="id_username">Username:</label>
+            <input
+              type="text"
+              name="username"
+              value="belalelbanna"
+              maxlength="150"
+              autocapitalize="none"
+              autocomplete="username"
+              autofocus=""
+              required=""
+              id="id_username"
+            />
+
+            <br />
+            <span class="helptext"
+              >Required. 150 characters or fewer. Letters, digits and @/./+/-/_
+              only.</span
+            >
+
+            <label for="id_password1">Password:</label>
+
+            <input
+              type="password"
+              name="password1"
+              autocomplete="new-password"
+              required=""
+              id="id_password1"
+            />
+
+            <br />
+            <span class="helptext"
+              ><ul>
+                <li>
+                  Your password can’t be too similar to your other personal
+                  information.
+                </li>
+                <li>Your password must contain at least 8 characters.</li>
+                <li>Your password can’t be a commonly used password.</li>
+                <li>Your password can’t be entirely numeric.</li>
+              </ul></span
+            >
+
+            <label for="id_password2">Password confirmation:</label>
+
+            <ul class="errorlist">
+              <li>The password is too similar to the username.</li>
+            </ul>
+            <input
+              type="password"
+              name="password2"
+              autocomplete="new-password"
+              required=""
+              id="id_password2"
+            />
+
+            <br />
+            <span class="helptext"
+              >Enter the same password as before, for verification.</span
+            >
+
+            <input type="submit" value="Login" />
+          </form>
+          <a href="./login.html" class="have-account">
+            Already have an account?</a
+          >
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- body content -->
+    </div>
+    <!-- end page -->
+
+    <script src="js/mian.js"></script>
+  </body>
+</html>
